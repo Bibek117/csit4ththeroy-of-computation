@@ -4,10 +4,12 @@ let checkString = (e) => {
     e.preventDefault();
     let string = document.getElementById('string');
     let inputString = string.value;
+    //validating input
     let validate = Array.from(inputString).every((symbol) => {
         return symbol === 'a' || symbol === 'b';
     })
     if (validate === true) {
+        //initial state to final state
         let [initialState, , , finalState] = ['q0', 'q1', 'q2', 'q3'];
         Array.from(inputString).forEach((symbol) => {
             if (symbol === 'a') {
@@ -24,6 +26,7 @@ let checkString = (e) => {
                 initialState = 'q0';
             }
         })
+        //displaying result
         finalState === initialState ? display.innerHTML = "Accepted" : display.innerHTML = "rejected";
         string.value = "";
     } else {
