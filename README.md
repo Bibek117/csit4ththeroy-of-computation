@@ -1,1 +1,1 @@
-# csit4ththeroy-of-automata
+# csit4ththeroy-of-computation
