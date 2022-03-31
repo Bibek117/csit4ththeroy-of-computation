@@ -29,6 +29,7 @@ let checkString = (e) => {
         //displaying result
         finalState === initialState ? display.innerHTML = "Accepted" : display.innerHTML = "rejected";
         string.value = "";
+        setTimeout(() => { display.innerHTML = ""; }, 5000)
     } else {
         display.innerHTML = "symbol other than a and b are not accepted";
     }
