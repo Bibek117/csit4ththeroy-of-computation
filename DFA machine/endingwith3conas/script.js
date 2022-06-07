@@ -4,7 +4,7 @@ let checkString = (e) => {
     e.preventDefault();
     let string = document.getElementById('string');
     let inputString = string.value;
-    //validating input
+    //validating input and empty array has a truthy value
     let validate = Array.from(inputString).every((symbol) => {
         return symbol === 'a' || symbol === 'b';
     })
